@@ -1,18 +1,29 @@
 {
   "compilerOptions": {
-    "target": "es2018",
-    "module": "esnext",
+    "target": "es5",
+    "module": "es2015",
     "declaration": true,
     "importHelpers": true,
     "moduleResolution": "node",
+    "esModuleInterop": true,
     "outDir": "./lib",
     "strictNullChecks": true,
     "strict": true,
-    "baseUrl": ".",
-    "rootDir": ".",
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "declarationMap": true,
+    "removeComments": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "suppressImplicitAnyIndexErrors": true,
     "paths": {
       "@/*": ["src/*"],
-      "test/*": ["test/*"]
+      "@tests/*": ["tests/*"]
     },
     "types": [
       "node",
